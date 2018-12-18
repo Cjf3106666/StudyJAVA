@@ -43,11 +43,11 @@ public class Demo25_CheckEnglish {
     }
 
     public static void main(String[] args) throws IOException {
-       // long begin = System.currentTimeMillis();
+        // long begin = System.currentTimeMillis();
         httpURLConectionGET();
         checkEN();
-      //  long end = System.currentTimeMillis();
-       // System.out.println(end - begin);
+        //  long end = System.currentTimeMillis();
+        // System.out.println(end - begin);
     }
 
     static public void checkEN() throws IOException {

@@ -8,10 +8,10 @@ import java.nio.channels.FileChannel;
 
 public class Demo27_CheckComplexChar {
     public static void main(String[] args) throws IOException {
-      //  long begin = System.currentTimeMillis();
+        //  long begin = System.currentTimeMillis();
         httpURLConectionGET();
         checkComplexChar();
-       // long end = System.currentTimeMillis();
+        // long end = System.currentTimeMillis();
         //System.out.println(end - begin);
 
     }

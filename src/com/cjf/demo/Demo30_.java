@@ -1,41 +1,19 @@
 package com.cjf.demo;
 
-import java.util.Arrays;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Demo30_ {
-   volatile static int a;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        ExecutorService service=Executors.newFixedThreadPool(2);
-        for (int k=0;k<5;k++) {
-            service.execute(() -> {
-                while (true) {
-                    try {
-                        TimeUnit.SECONDS.sleep(2);
-                        System.out.println(Thread.currentThread().getName()+" : "+a);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            });
+        ClassLoader classLoader = new Demo30_().getClass().getClassLoader();
+        BufferedReader br = new BufferedReader(new InputStreamReader(classLoader.getResourceAsStream("123.txt")));
+        String temp;
+        while ((temp = br.readLine()) != null) {
+            System.out.println(temp);
         }
-        ExecutorService service1=Executors.newFixedThreadPool(5);
-        for(int j=0;j<5;j++){
-        service1.execute(()->{
-            while(true) {
-                try{
-                    Thread.sleep(2000);
-                    a++;
-                    System.out.println(Thread.currentThread().getName()+" 加了一次");
-                }catch (InterruptedException e){
-                e.printStackTrace();
 
-                }
-            }
-        });
-    }}
+    }
 }

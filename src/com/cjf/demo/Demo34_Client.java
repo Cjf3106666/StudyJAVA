@@ -18,7 +18,7 @@ public class Demo34_Client {
                     BufferedReader ir = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     String temp = "";
                     while ((temp = ir.readLine()) != null) {
-                        System.out.println(socket.getInetAddress()+":"+socket.getPort()+"发来消息:"+temp);
+                        System.out.println(socket.getInetAddress() + ":" + socket.getPort() + "发来消息:" + temp);
                     }
                 } catch (IOException e) {
                     e.printStackTrace();

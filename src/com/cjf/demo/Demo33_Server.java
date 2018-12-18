@@ -20,16 +20,15 @@ public class Demo33_Server {
     public static void main(String[] args) throws IOException, InterruptedException {
         ServerSocket server = new ServerSocket(6666);
         ExecutorService service = Executors.newSingleThreadScheduledExecutor();
+        ExecutorService service2 = Executors.newCachedThreadPool();
         service.execute(() -> {
             while (true) {
                 Socket socket = null;
                 try {
                     socket = server.accept();
+                    service2.execute(new ConnectThread(socket));
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-                if (socket != null) {
-                    new ConnectThread(socket).start();
                 }
             }
         });
@@ -49,7 +48,7 @@ public class Demo33_Server {
         }
     }
 
-    static class ConnectThread extends Thread {
+    static class ConnectThread implements Runnable {
 
         private Socket socket;
 
@@ -60,7 +59,7 @@ public class Demo33_Server {
         @Override
         public void run() {
             try {
-                System.out.println( socket.getInetAddress()+":"+socket.getPort()+ " " + " 连接了服务器 ");
+                System.out.println(socket.getInetAddress() + ":" + socket.getPort() + " " + " 连接了服务器 ");
                 PrintWriter pw = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()));
                 pws.put(pw);
             } catch (IOException e) {
