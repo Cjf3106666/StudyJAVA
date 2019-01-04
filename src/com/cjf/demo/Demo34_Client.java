@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+/**
+ * BIO SOCKET 编程 客户端
+ */
 public class Demo34_Client {
     public static void main(String[] args) throws IOException {
         ExecutorService service = Executors.newCachedThreadPool();

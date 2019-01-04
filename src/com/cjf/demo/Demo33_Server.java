@@ -12,7 +12,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- *
+ * BIO SOCKET 编程 服务端
  */
 public class Demo33_Server {
     static BlockingQueue<PrintWriter> pws = new LinkedBlockingQueue<>();

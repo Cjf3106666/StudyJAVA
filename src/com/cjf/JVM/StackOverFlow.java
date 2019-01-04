@@ -18,21 +18,13 @@ public class StackOverFlow {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        ExecutorService service=Executors.newFixedThreadPool(1000);
-        CountDownLatch latch=new CountDownLatch(1000);
-        for (int i=0;i<1000;i++){
         try{
             AddCount();
         }
         catch (Throwable e){
             e.printStackTrace();
-        }
-        finally {
-            latch.countDown();
-        }
     }
-    latch.await();
         System.out.println(count);
-        service.shutdown();
+
     }
 }

@@ -8,8 +8,8 @@ import java.io.IOException;
 public class Demo28_简繁转换工具 {
 
     public static void main(String[] args) throws IOException {
-        // System.out.println(traditionalized("测试数据"));
-        // System.out.println(Tosimplechar("測試數據"));
+         //System.out.println(traditionalized("测试数据"));
+         //System.out.println(Tosimplechar("測試數據"));
     }
 
     public static String simchar() {

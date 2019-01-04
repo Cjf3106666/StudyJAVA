@@ -20,7 +20,7 @@ package com.cjf.LeedCode;
  **/
 public class 最长公共前缀 {
     public static void main(String[] args) {
-        String strs[] = {};
+        String strs[] = {"dog","racecar","car"};
         System.out.println(longestCommonPrefix(strs));
     }
 
