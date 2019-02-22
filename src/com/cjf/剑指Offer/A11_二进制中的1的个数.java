@@ -9,7 +9,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 16:01
  **/
-public class 二进制中的一个数 {
+public class A11_二进制中的1的个数 {
 
     public static void main(String[] args) {
 

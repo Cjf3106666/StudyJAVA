@@ -11,7 +11,7 @@ import java.util.List;
  * @Author CJF
  * @Date 2019/2/20 16:54
  **/
-public class 调整数组顺序使奇数位于偶数前面 {
+public class A13_调整数组顺序使奇数位于偶数前面 {
 
     static public void reOrderArray(int[] array) {
         List<Integer> list1 = new ArrayList<>();

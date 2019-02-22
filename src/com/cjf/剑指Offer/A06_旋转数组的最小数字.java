@@ -6,7 +6,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 14:13
  **/
-public class 旋转数组的最小数字 {
+public class A06_旋转数组的最小数字 {
     //笨方法
    /* static public int minNumberInRotateArray(int[] array) {
         if (array.length == 0) {

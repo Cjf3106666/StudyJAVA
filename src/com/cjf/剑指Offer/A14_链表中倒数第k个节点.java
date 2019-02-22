@@ -5,7 +5,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/21 10:54
  **/
-public class 链表中倒数第k个节点 {
+public class A14_链表中倒数第k个节点 {
     static public ListNode FindKthToTail(ListNode head, int k) {
         if (k == 0 || head == null) {
             return null;

@@ -19,7 +19,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/21 17:22
  **/
-public class 二叉树的镜像 {
+public class A18_二叉树的镜像 {
   static   public void Mirror(TreeNode root) {
         if(root==null) {
             return ;

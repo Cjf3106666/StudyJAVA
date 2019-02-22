@@ -6,7 +6,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/1/9 16:31
  **/
-public class 二维数组中的查找 {
+public class A01_二维数组中的查找 {
     static public boolean Find(int target, int[][] array) {
         if (array.length == 0) {
             return false;

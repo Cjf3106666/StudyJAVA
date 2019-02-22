@@ -5,7 +5,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/21 11:55
  **/
-public class 合并两个排序的链表 {
+public class A16_合并两个排序的链表 {
     static public ListNode Merge(ListNode list1, ListNode list2) {
         if (list1 == null && list2 == null) {
             return null;

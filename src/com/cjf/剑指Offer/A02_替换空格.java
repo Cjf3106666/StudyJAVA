@@ -8,7 +8,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/1/9 16:51
  **/
-public class 替换空格 {
+public class A02_替换空格 {
     public String replaceSpace(StringBuffer str) {
          return str.toString().replaceAll(" ","%20");
     }

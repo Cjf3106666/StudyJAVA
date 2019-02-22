@@ -1,14 +1,13 @@
 package com.cjf.剑指Offer;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * @Descpription 输入一个链表，按链表值从尾到头的顺序返回一个ArrayList。
  * @Author CJF
  * @Date 2019/2/20 11:41
  **/
-public class 从头到尾打印链表 {
+public class A03_从头到尾打印链表 {
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> list = new ArrayList<>();
         if (listNode == null) {
@@ -37,7 +36,7 @@ public class 从头到尾打印链表 {
         listNode3.next = listNode4;
         listNode4.next = listNode5;
 
-        ArrayList list = new 从头到尾打印链表().printListFromTailToHead(listNode);
+        ArrayList list = new A03_从头到尾打印链表().printListFromTailToHead(listNode);
         System.out.println(list);
     }
 }

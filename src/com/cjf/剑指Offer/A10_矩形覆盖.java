@@ -9,7 +9,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 15:46
  **/
-public class 矩形覆盖 {
+public class A10_矩形覆盖 {
     public int RectCover(int target) {
     if(target<=0)return 0;
     if(target==1)return 1;

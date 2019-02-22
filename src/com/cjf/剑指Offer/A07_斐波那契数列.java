@@ -7,7 +7,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 15:17
  **/
-public class 斐波那契数列 {
+public class A07_斐波那契数列 {
 
    static public int Fibonacci(int n) {
         if (n == 0) {

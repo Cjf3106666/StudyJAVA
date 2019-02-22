@@ -7,7 +7,7 @@ import java.util.Stack;
  * @Author CJF
  * @Date 2019/2/21 11:24
  **/
-public class 反转链表 {
+public class A15_反转链表 {
     static public ListNode ReverseList(ListNode head) {
         if(head==null) {
             return null;

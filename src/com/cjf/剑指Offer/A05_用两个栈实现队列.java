@@ -7,7 +7,7 @@ import java.util.Stack;
  * @Author CJF
  * @Date 2019/2/20 13:13
  **/
-public class 用两个栈实现队列 {
+public class A05_用两个栈实现队列 {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
 

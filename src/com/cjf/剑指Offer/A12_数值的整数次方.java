@@ -8,7 +8,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 16:48
  **/
-public class 数值的整数次方 {
+public class A12_数值的整数次方 {
     public double Power(double base, int exponent) {
         return Math.pow(base,exponent);
     }

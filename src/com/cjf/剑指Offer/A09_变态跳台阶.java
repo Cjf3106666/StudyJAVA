@@ -9,7 +9,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/20 15:43
  **/
-public class 变态跳台阶 {
+public class A09_变态跳台阶 {
 
     static public int JumpFloorII(int target) {
         if (target <= 0) return 0;

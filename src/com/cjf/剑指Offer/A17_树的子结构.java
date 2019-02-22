@@ -5,7 +5,7 @@ package com.cjf.剑指Offer;
  * @Author CJF
  * @Date 2019/2/21 14:58
  **/
-public class 树的子结构 {
+public class A17_树的子结构 {
     static public boolean HasSubtree(TreeNode root1, TreeNode root2) {
         if(root1==null||root2==null) {
             return false;
