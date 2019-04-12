@@ -42,7 +42,7 @@ public class A14_链表中倒数第k个节点 {
         listNode2.next = listNode3;
         listNode3.next = listNode4;
         listNode4.next = listNode5;
-        System.out.println(FindKthToTail(listNode, 6).val);
+        System.out.println(FindKthToTail(listNode, 4).val);
     }
 }
 

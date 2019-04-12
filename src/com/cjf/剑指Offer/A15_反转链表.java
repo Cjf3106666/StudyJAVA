@@ -6,6 +6,7 @@ import java.util.Stack;
  * @Descpription 输入一个链表，反转链表后，输出新链表的表头。
  * @Author CJF
  * @Date 2019/2/21 11:24
+ * 1 2 3 4 5
  **/
 public class A15_反转链表 {
     static public ListNode ReverseList(ListNode head) {
@@ -14,12 +15,20 @@ public class A15_反转链表 {
         }
         ListNode pre=null;
         ListNode next=null;
-        while (head!=null){
+       /* while (head!=null){
             next = head.next;
             head.next = pre;
             pre = head;
             head = next;
-        }
+        }*/
+
+       while(head!=null){
+           next=head.next;
+           head.next=pre;
+           pre=head;
+           head=next;
+           //next.next=head;
+       }
         return pre;
     }
 

@@ -1,8 +1,6 @@
 package com.cjf.demo;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -12,7 +10,7 @@ public class Demo16_ThreadPool {
     static AtomicInteger k = new AtomicInteger();
 
     public static void main(String[] args) throws InterruptedException {
-
+        ExecutorService executorService= new ThreadPoolExecutor(1,1,0L,TimeUnit.MILLISECONDS,new ArrayBlockingQueue(10));
         ExecutorService service = Executors.newFixedThreadPool(10);
         for (int i = 0; i < 30; i++) {
             service.execute(() -> {

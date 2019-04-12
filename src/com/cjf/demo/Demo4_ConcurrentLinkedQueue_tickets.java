@@ -31,7 +31,6 @@ public class Demo4_ConcurrentLinkedQueue_tickets {
                     }
                 }
             }).start();
-
         }
     }
 }

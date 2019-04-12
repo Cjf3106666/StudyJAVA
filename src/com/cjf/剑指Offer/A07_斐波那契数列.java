@@ -21,6 +21,6 @@ public class A07_斐波那契数列 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Fibonacci(2));
+        System.out.println(Fibonacci(8));
     }
 }

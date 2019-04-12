@@ -19,7 +19,7 @@ import java.util.Map;
  **/
 public class 最长连续数 {
     public static void main(String[] args) {
-        int[] num = {0, -1};
+        int[] num = {0, -1,5,3,2,4,1};
         System.out.println(Solution(num));
     }
 
@@ -40,7 +40,7 @@ public class 最长连续数 {
             int temp1 = e + 1;
             int temp2 = e - 1;
             while (true) {
-                if (map.get(temp1) != null && map.get(temp1) != true) {
+                if (map.get(temp1) != null && !map.get(temp1)) {
                     map.put(temp1, true);
                     count++;
                     temp1++;
@@ -49,7 +49,7 @@ public class 最长连续数 {
                 }
             }
             while (true) {
-                if (map.get(temp2) != null && map.get(temp2) != true) {
+                if (map.get(temp2) != null && !map.get(temp2)) {
                     map.put(temp2, true);
                     count++;
                     temp2--;

@@ -23,17 +23,15 @@ public class Demo1_ReentrantLock {
 
     public static void main(String[] args) {
 
-        class test extends Thread {
+         class test extends Thread {
             @Override
             public void run() {
                 //  super.run();
                 test();
             }
-
-
         }
-
-
+        Thread a= new Thread(new test());
+         a.start();
     }
 
 }

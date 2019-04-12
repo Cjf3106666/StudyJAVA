@@ -1,10 +1,15 @@
 package com.cjf.demo;
 
+
+import com.lenovo.autotest.tools.swipeTo;
+import com.lenovo.autotest.tools.waitUntil;
+
 /**
  * @Descpription
  * @Author CJF
  * @Date 2019/1/2 14:37
  **/
+
 public class Demo39_ObjectClone implements Cloneable{
     String name ;
     Integer age;
@@ -36,6 +41,5 @@ public class Demo39_ObjectClone implements Cloneable{
         o2.age=new Integer(10);
         System.out.println(o);
         System.out.println(o2);
-
     }
 }

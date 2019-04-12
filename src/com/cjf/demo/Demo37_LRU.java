@@ -2,6 +2,7 @@ package com.cjf.demo;
 
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -62,7 +63,6 @@ public class Demo37_LRU {
         cache.get("a8d3");
         cache.get("asd3");
         System.out.println(cache);
-
 
     }
 

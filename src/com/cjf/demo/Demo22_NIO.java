@@ -10,10 +10,10 @@ import java.util.List;
 
 public class Demo22_NIO {
     public static void main(String[] args) throws IOException {
-        //Demo01();
-        //Demo02();
+      //  Demo01();
+       // Demo02();
         //Demo03();
-        //Demo04();
+        Demo04();
 
     }
 
@@ -53,7 +53,7 @@ public class Demo22_NIO {
     }
 
     private static void Demo02() throws IOException {
-        FileChannel in = new FileInputStream("123.html").getChannel(),
+        FileChannel in = new FileInputStream("res/test.txt").getChannel(),
                 out = new FileOutputStream("456.html").getChannel();
         // in.transferTo(0,in.size(),out);
         out.transferFrom(in, 0, in.size());

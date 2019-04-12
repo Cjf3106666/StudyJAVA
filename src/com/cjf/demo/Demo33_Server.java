@@ -15,6 +15,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  * BIO SOCKET 编程 服务端
  */
 public class Demo33_Server {
+
     static BlockingQueue<PrintWriter> pws = new LinkedBlockingQueue<>();
 
     public static void main(String[] args) throws IOException, InterruptedException {

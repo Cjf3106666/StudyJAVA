@@ -16,5 +16,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="uiAutomatorTools" level="project" />
+    <orderEntry type="library" name="uiAutomatorTools (2)" level="project" />
+    <orderEntry type="library" name="tools" level="project" />
   </component>
 </module>

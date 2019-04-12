@@ -1,6 +1,7 @@
 package com.cjf.剑指Offer;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * @Descpription
@@ -18,11 +19,21 @@ import java.util.ArrayList;
  * @Date 2019/2/22 16:45
  **/
 public class A24_二叉树中和为某一值的路径 {
+    ArrayList<Integer> routeList=new ArrayList<>();
+    ArrayList<ArrayList<Integer>> allRoute= new ArrayList<>();
+     public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
+        if(root==null) {
+            return allRoute;
+        }
+        routeList.add(root.val);
+        target-=root.val;
+        if(target==0&&root.left==null&&root.right==null){
+            allRoute.add(new ArrayList<>(routeList));
+        }
+        FindPath(root.left,target);
+        FindPath(root.right,target);
 
-    static public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
-        ArrayList<Integer> routeList=new ArrayList<>();
-        ArrayList<ArrayList<Integer>> allRoute= new ArrayList<>();
-
+        routeList.remove(routeList.size()-1);
 
         return allRoute;
 
@@ -42,7 +53,7 @@ public class A24_二叉树中和为某一值的路径 {
         node1.right = node4;
         node2.left = node5;
         node2.right = node6;
-        System.out.println(FindPath(root, 19));
+        System.out.println(new A24_二叉树中和为某一值的路径().FindPath(root, 19));
     }
 
 

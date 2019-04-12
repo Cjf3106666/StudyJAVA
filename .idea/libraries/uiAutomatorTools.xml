@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uiAutomatorTools">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/uiAutomatorTools.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
